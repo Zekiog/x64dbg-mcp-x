@@ -1,0 +1,20 @@
+{
+  "name": "x64dbg-mcp-x",
+  "version": "1.0.0",
+  "description": "Unified x64dbg MCP Plugin",
+  "homepage": "https://github.com/Zekiog/x64dbg-mcp-x",
+  "license": "MIT",
+  "dependencies": {
+    "boost-algorithm": "",
+    "boost-optional": "",
+    "boost-system": "",
+    "nlohmann-json": "",
+    "cpprestsdk": ""
+  },
+  "overrides": [
+    {
+      "name": "openssl",
+      "version": "3.1.0"
+    }
+  ]
+}
