@@ -1,0 +1,93 @@
+site_name: x64dbg-mcp-x
+site_description: Unified x64dbg MCP Server - 181+ tools from 5 implementations
+site_author: Zekiog
+site_url: https://github.com/Zekiog/x64dbg-mcp-x
+
+repo_name: Zekiog/x64dbg-mcp-x
+repo_url: https://github.com/Zekiog/x64dbg-mcp-x
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.codehilite:
+      guess_lang: false
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - Quick Start: quickstart.md
+    - Configuration: configuration.md
+  - Documentation:
+    - API Reference: api.md
+    - Tool Specifications: tools.md
+    - AI Agent Guide: agents.md
+    - Claude Code: claude.md
+    - Attach Guide: attach.md
+  - Clients:
+    - Python Client: clients/python.md
+    - TypeScript Client: clients/typescript.md
+  - Examples:
+    - Basic Usage: examples/basic.md
+    - Memory Analysis: examples/memory.md
+    - Malware Analysis: examples/malware.md
+  - Case Studies:
+    - PEB Analysis: case-studies/peb.md
+  - Contributing:
+    - Development: contributing/development.md
+    - Testing: contributing/testing.md
+    - Code Style: contributing/style.md
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Zekiog/x64dbg-mcp-x
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/x64dbg-automate/
+
+extra_css:
+  - css/custom.css
+
+extra_javascript:
+  - js/custom.js
+
+copyright: |
+  &copy; 2026 Zekiog - MIT License
