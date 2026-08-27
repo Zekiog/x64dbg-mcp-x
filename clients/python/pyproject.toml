@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "x64dbg-automate"
+version = "1.0.0"
+description = "Python client for x64dbg-mcp-x - Unified MCP Server (181+ tools)"
+authors = ["Zekiog <contact@zekiog.dev>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Zekiog/x64dbg-mcp-x"
+repository = "https://github.com/Zekiog/x64dbg-mcp-x"
+keywords = ["x64dbg", "mcp", "reverse-engineering", "debugger", "automation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Debuggers",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+httpx = "^0.25.0"
+pydantic = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+black = "^23.0.0"
+ruff = "^0.1.0"
+mypy = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+x64dbg = "x64dbg_automate.cli:main"
