@@ -1,0 +1,39 @@
+name: Bug report
+description: Report broken behaviour or an unexpected result
+labels: ["bug", "triage"]
+body:
+    - type: markdown
+      attributes:
+        value: |
+          Thanks for taking the time to file a bug.
+          Please fill in every section below — incomplete reports are hard to act on.
+    - type: input
+      id: version
+      attributes:
+        label: Affected version
+        placeholder: "v1.2.3 or commit SHA"
+    - type: textarea
+      id: what-happened
+      attributes:
+        label: What happened?
+        description: Clear, factual description of the bug
+    - type: textarea
+      id: reproduce
+      attributes:
+        label: Steps to reproduce
+        placeholder: |
+          1. Run command X
+          2. With config Y
+          3. See error Z
+    - type: textarea
+      id: expected
+      attributes:
+        label: Expected behaviour
+    - type: textarea
+      id: env
+      attributes:
+        label: Environment
+        placeholder: |
+          OS: macOS 14.5
+          Runtime: Node 20.10 / Python 3.12
+          Other relevant tooling
