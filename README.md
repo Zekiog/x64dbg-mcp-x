@@ -1,5 +1,8 @@
 # x64dbg-mcp-x
 
+> **Status:** ✅ Active — unified MCP server for x64dbg with 181+ tools. Maintained, contributions welcome.
+
+
 **Unified x64dbg MCP Server** - Merged from 5 implementations: duty1g, bromoket, SetsunaYukiOvO, wasdubya, and dariushoule.
 
 **181+ MCP Tools** for AI-powered reverse engineering and debugging.
