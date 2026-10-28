@@ -1,0 +1,9 @@
+# Default owners for everything in this repo.
+*                           @Zekiog
+
+# Critical paths require explicit review.
+/.github/                   @Zekiog
+*.secret                    @Zekiog
+*.env                       @Zekiog
+**/auth/                    @Zekiog
+**/security/                @Zekiog
